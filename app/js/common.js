@@ -74,7 +74,16 @@ $(document).ready(function () {
             $('html, body').animate({
                 scrollTop: $(scroll_el).offset().top
             }, 500);
+            $('.mobile-menu').slideUp();
         }
         return false;
     });
+});
+
+$('.btn-burger').click(function () {
+   $('.mobile-menu').slideDown();
+});
+
+$('.btn-close').click(function () {
+    $('.mobile-menu').slideUp();
 });
