@@ -2,7 +2,9 @@ $('.brands-content__scroll').slick({
     slidesToShow: 4,
     arrows: false,
     autoplay: true,
-    speed: 1000
+    speed: 1000,
+    dots: true,
+    variableWidth: true,
 });
 
 function setProgress(index) {
@@ -19,8 +21,6 @@ const $progressBar = $('.progress-bg');
 $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
     setProgress(nextSlide);
 });
-
-
 
 setProgress(0);
 

@@ -730,6 +730,7 @@ main
   transform: translate(0,-50%)
   border-radius: 7px
   transition: .3s ease
+  cursor: pointer
 
 //distribution
 .distribution
@@ -954,7 +955,22 @@ footer
   &:after
     transform: rotate(-45deg)
 
-
+.slick-dots
+  bottom: 0
+  .slick-active
+    background: #e81818
+    border-color: #e81818
+  li
+    margin: 0 7px 0 0
+    width: 10px
+    height: 10px
+    border: 1px solid #bfbebf
+      radius: 50%
+    background: #e9e8e9
+    &:last-child
+      margin: 0
+    button
+      display: none
 
 .menu-open
   overflow: hidden
